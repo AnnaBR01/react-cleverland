@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
-import { Color, ContainerFlexColumn, Media, SUBTITLE_LARGE } from '../../ui';
+import { Color, ContainerFlexColumn, H3, H4, Media, SUBTITLE_LARGE } from '../../ui';
 
 const Title = styled.h6`
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  ${H4}
 
   ${Media.SM} {
-    font-size: 18px;
-    line-height: 28px;
+    ${H3}
   }
 `;
 

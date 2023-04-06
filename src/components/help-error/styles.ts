@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import { Color } from '../../ui';
+
 const StyledHelpError = styled.span<{ $error: boolean }>`
-  color: ${({ $error }) => ($error ? ' #f42c4f' : '#a7a7a7')};
+  color: ${({ $error }) => ($error ? Color.Negative : Color.GrayType2)};
 `;
 
 export { StyledHelpError };

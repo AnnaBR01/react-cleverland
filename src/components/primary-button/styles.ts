@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { Color } from '../../ui';
-import { Media } from '../../ui/media';
+import { BUTTON_SMALL, Color, Media } from '../../ui';
 
 interface IProps {
   large: number;
@@ -23,14 +22,11 @@ const StyledPrimaryButton = styled.button.attrs<IProps>((props) => ({
   width: ${({ allWidth, large }) => (allWidth ? '100%' : large)};
   padding-block: ${({ padding }) => padding};
   padding-inline: 15px;
-  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  background: ${Color.ButtonHover};
   border-radius: 20px;
-  font-weight: 600;
+  color: ${Color.White};
+  ${BUTTON_SMALL}
   font-size: ${({ fontSize }) => fontSize};
-  line-height: 150%;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #ffffff;
 
   &:disabled {
     background: ${Color.GrayType4};
@@ -42,7 +38,6 @@ const StyledPrimaryButton = styled.button.attrs<IProps>((props) => ({
 
   ${Media.SM} {
     width: 100%;
-    font-size: 12px;
   }
 `;
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlex } from '../../ui';
+import { Color, ContainerFlex } from '../../ui';
 
 interface IProps {
   gap: number;
@@ -13,7 +13,7 @@ const StyledStars = styled(ContainerFlex).attrs<IProps>((props) => ({
 `;
 
 const Text = styled.p`
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
   letter-spacing: 0.1px;
 `;
 

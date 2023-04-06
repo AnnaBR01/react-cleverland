@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 
-import { ContainerFlex, ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
-import { SecondarySmallTitle } from '../../ui/typography';
+import {
+  Color,
+  ContainerFlex,
+  ContainerFlexColumn,
+  Media,
+  SecondarySmallTitle,
+  TEXT_CONTENT_LARGE,
+  TEXT_CONTENT_SMALL,
+} from '../../ui';
 
 const StyledBookDescription = styled(ContainerFlexColumn)`
   grid-gap: 62px;
@@ -71,41 +77,12 @@ const DescriptionRow = styled.div`
 `;
 
 const InfoTitle = styled.p`
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #a7a7a7;
-
-  ${Media.MD} {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  ${Media.SM} {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-  }
+  ${TEXT_CONTENT_LARGE}
+  color: ${Color.GrayType2};
 `;
 
 const Info = styled.p`
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-
-  ${Media.MD} {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  ${Media.SM} {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-  }
+  ${TEXT_CONTENT_SMALL}
 `;
 
 export {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { Color, Media } from '../../ui';
 
 const Step = styled.p`
   margin-block: 8px 32px;
@@ -13,7 +13,7 @@ const TextWrapper = styled.div`
   grid-gap: 16px;
   font-size: 16px;
   line-height: 24px;
-  color: #727272;
+  color: ${Color.GrayType1};
 
   ${Media.SM} {
     flex-direction: column;
@@ -30,7 +30,7 @@ const Text = styled.div`
   line-height: 18px;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  color: #363636;
+  color: ${Color.Dark};
 `;
 
 const Registration = styled.form`

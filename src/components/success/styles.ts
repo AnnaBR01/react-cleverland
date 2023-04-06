@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexBeetween, Media } from '../../ui';
+import { Color, ContainerFlexBeetween, Media, SUBTITLE_LARGE } from '../../ui';
 
 const StyledSuccess = styled(ContainerFlexBeetween)`
   position: fixed;
@@ -26,8 +26,8 @@ const Container = styled(ContainerFlexBeetween)`
   grid-gap: 15px;
   margin: 0 auto;
   padding: 24px 32px;
-  background-color: #ebf9f1;
-  border: 1.5px solid #00ca71;
+  background-color: ${Color.PositiveBackground};
+  border: 1.5px solid ${Color.Positive};
   border-radius: 5px;
 
   ${Media.MD} {
@@ -42,9 +42,7 @@ const Container = styled(ContainerFlexBeetween)`
 
 const Text = styled.p`
   text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  ${SUBTITLE_LARGE}
 
   ${Media.MD} {
     font-size: 14px;

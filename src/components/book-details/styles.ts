@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexRowCenter } from '../../ui/containers';
-import { Media } from '../../ui/media';
-import { SecondarySmallTitle, Text } from '../../ui/typography';
+import { Color, ContainerFlexRowCenter, H5, Media, SecondarySmallTitle, Text } from '../../ui';
 
 const StyledBookDetails = styled.div`
   display: flex;
@@ -34,7 +32,7 @@ const Image = styled.img`
   width: 445px;
   height: 593px;
   object-fit: contain;
-  border: 1px solid #a7a7a7;
+  border: 1px solid ${Color.GrayType2};
   border-radius: 10px;
 
   ${Media.MD} {
@@ -53,7 +51,7 @@ const Image = styled.img`
 const NoImage = styled(ContainerFlexRowCenter)`
   width: 445px;
   height: 593px;
-  border: 1px solid #a7a7a7;
+  border: 1px solid ${Color.GrayType2};
   border-radius: 10px;
 
   ${Media.MD} {
@@ -74,11 +72,8 @@ const WrapperContent = styled.div``;
 const Author = styled.h3`
   margin-top: 24px;
   margin-bottom: 32px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.1px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
+  ${H5}
 
   ${Media.MD} {
     margin-block: 32px;

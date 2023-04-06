@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlex, ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { BODY_LARGE, Color, ContainerFlex, ContainerFlexColumn, H5, Media } from '../../ui';
 
 const Wrapper = styled(ContainerFlexColumn)`
   width: 100%;
@@ -45,7 +44,7 @@ const ReviewsAmount = styled.span`
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
 `;
 
 const Info = styled(ContainerFlex)`
@@ -67,20 +66,13 @@ const Box = styled(ContainerFlex)`
 `;
 
 const InfoText = styled.p`
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
-  color: #727272;
-
-  ${Media.SM} {
-    font-size: 15px;
-    line-height: 20px;
-  }
+  color: ${Color.GrayType1};
+  ${BODY_LARGE}
 `;
 
 const Text = styled(InfoText)`
   width: 730px;
-  color: #363636;
+  color: ${Color.Dark};
 
   ${Media.MD} {
     width: 100%;
@@ -93,4 +85,21 @@ const ButtonArrow = styled.button`
   margin-left: 24px;
 `;
 
-export { Wrapper, Review, Content, ReviewsAmount, TitleBox, Info, InfoText, Text, Box, WrapperReviews, ButtonArrow };
+const SmallTitle = styled.p`
+  ${H5}
+`;
+
+export {
+  Wrapper,
+  Review,
+  Content,
+  ReviewsAmount,
+  TitleBox,
+  Info,
+  InfoText,
+  Text,
+  Box,
+  WrapperReviews,
+  ButtonArrow,
+  SmallTitle,
+};

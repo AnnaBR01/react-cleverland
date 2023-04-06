@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexBeetween, ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlexBeetween, ContainerFlexColumn, Media } from '../../ui';
 
 const StyledBurgerMenu = styled.div<{ $menuOpen: boolean }>`
   top: ${({ $menuOpen }) => ($menuOpen ? '94px' : '-100%')};
@@ -13,7 +12,7 @@ const StyledBurgerMenu = styled.div<{ $menuOpen: boolean }>`
   overflow-y: auto;
   width: 78%;
   min-width: 502px;
-  background: #f9f9fa;
+  background: ${Color.GrayType5};
   box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
     0px 1px 5px rgba(191, 196, 201, 0.24);
 
@@ -47,11 +46,11 @@ const CategoryBox = styled(ContainerFlexColumn)<{ $open: boolean }>`
 
 const Amount = styled.span<{ $isActive: boolean }>`
   padding-left: 6px;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: ${({ $isActive }) => ($isActive ? '#363636' : '#a7a7a7')};
+  color: ${({ $isActive }) => ($isActive ? Color.Dark : Color.GrayType2)};
 `;
 
 const WrapperChevron = styled(ContainerFlexBeetween)`

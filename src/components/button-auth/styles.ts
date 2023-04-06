@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { BUTTON_LARGE, Color, Media } from '../../ui';
 
 interface IProps {
   marginTopLg?: number;
@@ -17,17 +17,13 @@ const StyledButtonAuth = styled.button.attrs<IProps>((props) => ({
   padding: 14px;
   margin-top: ${({ marginTopLg }) => marginTopLg};
   margin-bottom: ${({ marginBottom }) => marginBottom};
-  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  background: ${Color.ButtonHover};
   border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: ${Color.White};
+  ${BUTTON_LARGE}
 
   &:disabled {
-    background: #ebebeb;
+    background: ${Color.GrayType4};
   }
 
   ${Media.SM} {

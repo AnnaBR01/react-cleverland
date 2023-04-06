@@ -1,22 +1,18 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { BODY_LARGE, Color, INFO_LARGE, Media } from '../../ui';
 
 const TextWrapper = styled.div`
   display: flex;
   align-items: center;
-  grid-gap: 16px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #727272;
+  color: ${Color.GrayType1};
+  ${BODY_LARGE}
 
   ${Media.SM} {
     flex-direction: column;
     align-items: flex-start;
     grid-gap: 7px;
-    font-size: 15px;
-    line-height: 20px;
   }
 `;
 
@@ -29,7 +25,7 @@ const Text = styled.div`
   line-height: 18px;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  color: #363636;
+  color: ${Color.Dark};
 `;
 
 const StyledSendEmailForm = styled.form`
@@ -47,22 +43,19 @@ const InputWrapper = styled.div`
 `;
 
 const TextLink = styled(Link)`
-  color: #363636;
+  color: ${Color.Dark};
 `;
 
 const ForgotError = styled.span`
-  color: #f42c4f;
+  color: ${Color.Negative};
 `;
 
 const MessageForgot = styled.p`
   position: absolute;
   top: 56px;
   left: 12px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
+  ${INFO_LARGE}
 
   ${Media.SM} {
     margin-bottom: 10px;

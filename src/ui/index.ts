@@ -7,10 +7,28 @@ import {
   ContainerFlexRowCenter,
 } from './containers';
 import { Breakpoint, Media } from './media';
-import { SecondarySmallTitle, SmallTitle, SUBTITLE_LARGE, Title } from './typography';
+import {
+  BODY_LARGE,
+  BODY_SMALL,
+  BUTTON_LARGE,
+  BUTTON_SMALL,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  INFO_LARGE,
+  INFO_SMALL,
+  SecondarySmallTitle,
+  SUBTITLE_LARGE,
+  SUBTITLE_SMALL,
+  Text,
+  TEXT_CONTENT_LARGE,
+  TEXT_CONTENT_SMALL,
+  Title,
+} from './typography';
 
 export {
-  SUBTITLE_LARGE,
   Color,
   Media,
   Breakpoint,
@@ -20,6 +38,21 @@ export {
   ContainerFlexColumn,
   ContainerFlexBeetween,
   SecondarySmallTitle,
+  Text,
   Title,
-  SmallTitle,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  SUBTITLE_LARGE,
+  SUBTITLE_SMALL,
+  BODY_LARGE,
+  BODY_SMALL,
+  INFO_LARGE,
+  INFO_SMALL,
+  BUTTON_LARGE,
+  BUTTON_SMALL,
+  TEXT_CONTENT_LARGE,
+  TEXT_CONTENT_SMALL,
 };

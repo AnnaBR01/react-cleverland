@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Swiper } from 'swiper/react';
 
-import { Media } from '../../ui/media';
+import { Color, Media } from '../../ui';
 
 const StyledSlider = styled.div`
   width: 136px;
@@ -16,7 +16,7 @@ const Image = styled.img`
   height: 198px;
   margin-bottom: 15px;
   object-fit: cover;
-  border: 1px solid #a7a7a7;
+  border: 1px solid ${Color.GrayType2};
   border-radius: 3px;
 
   ${Media.SM} {
@@ -31,14 +31,10 @@ const StyledSwiperStyles = css`
     padding-bottom: 25px;
   }
 
-  /* .swiper-pagination {
-    bottom: 0px;
-  } */
-
   .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
-    background: #363636;
+    background: ${Color.Dark};
     border-radius: 50%;
   }
 `;

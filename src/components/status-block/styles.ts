@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { BODY_LARGE, BUTTON_LARGE, Color, ContainerFlexColumn, H3, Media } from '../../ui';
 
 interface IProps {
   gapLg: number;
@@ -16,7 +15,7 @@ const StyledAuthLayout = styled(ContainerFlexColumn).attrs<IProps>((props) => ({
   align-items: center;
   grid-gap: ${({ gapLg }) => gapLg};
   padding-top: 180px;
-  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  background: ${Color.ButtonHover};
 
   ${Media.SM} {
     grid-gap: ${({ gapSm }) => gapSm};
@@ -26,16 +25,8 @@ const StyledAuthLayout = styled(ContainerFlexColumn).attrs<IProps>((props) => ({
 `;
 
 const Logo = styled.p`
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.1px;
-  color: #ffffff;
-
-  ${Media.SM} {
-    font-size: 18px;
-    line-height: 28px;
-  }
+  ${H3}
+  color: ${Color.White};
 `;
 
 const StyledStatusBlock = styled.div`
@@ -47,7 +38,7 @@ const StyledStatusBlock = styled.div`
   align-items: center;
   grid-gap: 32px;
   padding: 48px 96px;
-  background: #ffffff;
+  background: ${Color.White};
   border-radius: 16px;
 
   ${Media.SM} {
@@ -58,42 +49,25 @@ const StyledStatusBlock = styled.div`
 `;
 
 const Title = styled.h3`
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-
-  ${Media.SM} {
-    font-size: 18px;
-    line-height: 28px;
-  }
+  ${H3}
 `;
 
 const Message = styled.p`
   text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-
-  ${Media.SM} {
-    font-size: 15px;
-    line-height: 20px;
-  }
+  ${BODY_LARGE}
 `;
 
 const Button = styled.button`
   width: 100%;
   padding: 14px;
-  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  background: ${Color.ButtonHover};
   border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #ffffff;
+  ${Color.White}
+  ${BUTTON_LARGE}
+
 
   ${Media.SM} {
     padding: 11px;
-
     font-size: 12px;
     line-height: 18px;
   }

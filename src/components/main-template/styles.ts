@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { ContainerFlexColumn, Media } from '../../ui';
 
 const StyledMainTemplate = styled(ContainerFlexColumn)`
   max-width: 1110px;

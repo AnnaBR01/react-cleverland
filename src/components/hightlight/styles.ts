@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import { Color } from '../../ui';
+
 const StyledHightlight = styled.span`
-  color: #ff5253;
+  color: ${Color.TextSelect};
 `;
 
 export { StyledHightlight };

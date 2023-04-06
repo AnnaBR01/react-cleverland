@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexColumn, ContainerFlexRowCenter, Media } from '../../ui';
+import { Color, ContainerFlexColumn, ContainerFlexRowCenter, Media } from '../../ui';
 
 const StyledModalOuter = styled(ContainerFlexRowCenter)`
   position: fixed;
@@ -24,7 +24,7 @@ const StyledModal = styled(ContainerFlexColumn)`
   align-items: center;
   grid-gap: 32px;
   padding: 48px 56px;
-  background: #ffffff;
+  background: ${Color.White};
   border-radius: 16px;
 
   ${Media.SM} {

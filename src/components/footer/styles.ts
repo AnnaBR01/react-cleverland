@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlex } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlex, Media } from '../../ui';
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -9,8 +8,8 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   width: 100%;
   padding: 16px 0px;
-  border-top: 1px solid #bfc4c9;
-  background: white;
+  border-top: 1px solid ${Color.GrayType3};
+  background: ${Color.White};
 
   ${Media.SM} {
     display: flex;
@@ -30,14 +29,8 @@ const Box = styled.div`
 `;
 
 const Text = styled.h3`
-  font-size: 16px;
-  font-weight: 400;
-  color: #363636;
-
   ${Media.SM} {
     text-align: center;
-    font-size: 15px;
-    line-height: 20px;
   }
 `;
 

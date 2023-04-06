@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlexColumn, H3, Media } from '../../ui';
 
 const StyledVerticalBooksContent = styled.div`
   display: grid;
@@ -28,11 +27,8 @@ const StyledHorizontalBooksContent = styled(ContainerFlexColumn)`
 const NoBooks = styled.p`
   margin-top: 200px;
   text-align: center;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.1px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
+  ${H3}
 
   ${Media.MD} {
     margin-top: 226px;
@@ -40,8 +36,6 @@ const NoBooks = styled.p`
 
   ${Media.SM} {
     margin-top: 137px;
-    font-size: 18px;
-    line-height: 28px;
   }
 `;
 

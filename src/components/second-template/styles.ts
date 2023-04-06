@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlex } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { ContainerFlex, Media } from '../../ui';
 
 const Wrapper = styled(ContainerFlex)`
   max-width: 1110px;

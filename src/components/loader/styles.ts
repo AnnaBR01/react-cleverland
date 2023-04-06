@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexRowCenter } from '../../ui/containers';
+import { ContainerFlexRowCenter } from '../../ui';
 
 const StaledLoader = styled(ContainerFlexRowCenter)`
   position: fixed;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { BUTTON_SMALL, Color, Media } from '../../ui';
 
 interface IProps {
   large: number;
@@ -22,15 +22,12 @@ const StyledButtonOccupied = styled.button.attrs<IProps>((props) => ({
   width: ${({ allWidth, large }) => (allWidth ? '100%' : large)};
   padding-block: ${({ padding }) => padding};
   padding-inline: 15px;
-  background: #ffffff;
-  border: 1px solid #bfc4c9;
+  background: ${Color.White};
+  border: 1px solid ${Color.GrayType3};
   border-radius: 20px;
-  font-weight: 600;
+  color: ${Color.Dark};
+  ${BUTTON_SMALL}
   font-size: ${({ fontSize }) => fontSize};
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #363636;
 
   ${Media.MD} {
     width: ${({ allWidth, middle }) => (allWidth ? '100%' : middle)};
@@ -38,7 +35,6 @@ const StyledButtonOccupied = styled.button.attrs<IProps>((props) => ({
 
   ${Media.SM} {
     width: 100%;
-    font-size: 12px;
   }
 `;
 

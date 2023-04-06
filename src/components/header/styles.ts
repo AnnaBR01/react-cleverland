@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlex, ContainerFlexBeetween } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlex, ContainerFlexBeetween, H3, Media } from '../../ui';
 
 const StyledHeader = styled.header`
   position: relative;
@@ -11,7 +10,7 @@ const StyledHeader = styled.header`
   width: 100%;
   padding: 32px 0px 15px;
   margin-bottom: 47px;
-  background: white;
+  background: ${Color.White};
 
   ${Media.MD} {
     padding: 32px 0px 22px;
@@ -47,10 +46,8 @@ const Container = styled(ContainerFlexBeetween)`
 `;
 const Title = styled.h1`
   margin-left: 30px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  color: #363636;
+  color: ${Color.Dark};
+  ${H3}
 
   ${Media.MD} {
     margin-left: 26px;
@@ -58,8 +55,6 @@ const Title = styled.h1`
 
   ${Media.SM} {
     margin-left: 24px;
-    font-size: 18px;
-    line-height: 28px;
   }
 `;
 
@@ -94,7 +89,7 @@ const UserInfo = styled(ContainerFlex)`
 
 const Text = styled.p`
   font-weight: 600;
-  color: #363636;
+  color: ${Color.Dark};
 `;
 
 const UserBurger = styled.div`
@@ -110,7 +105,7 @@ const UserBurger = styled.div`
   padding: 32px 24px;
   box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
   border-radius: 0px 0px 10px 10px;
-  background: #ffffff;
+  background: ${Color.White};
 `;
 
 export { Title, Box, LogoContainer, UserInfo, Text, Container, StyledHeader, BurgerBox, UserBurger };

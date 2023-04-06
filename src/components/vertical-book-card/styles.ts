@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlex, ContainerFlexColumn, ContainerFlexRowCenter, Media } from '../../ui';
+import { Color, ContainerFlex, ContainerFlexColumn, ContainerFlexRowCenter, Media, SUBTITLE_SMALL } from '../../ui';
 
 const StyledVerticalBookCard = styled(ContainerFlexColumn)`
   padding: 8px 8px 16px;
@@ -27,7 +27,7 @@ const Image = styled.img`
   width: 100%;
   height: 242px;
   object-fit: contain;
-  border: 1px solid #a7a7a7;
+  border: 1px solid ${Color.GrayType2};
   border-radius: 10px;
 
   ${Media.SM} {
@@ -39,8 +39,8 @@ const NoImage = styled(ContainerFlexRowCenter)`
   width: 100%;
   height: 242px;
   padding: 69px 44px;
-  background: #f9f9fa;
-  border: 1px solid #a7a7a7;
+  background: ${Color.GrayType5};
+  border: 1px solid ${Color.GrayType2};
   border-radius: 10px;
 
   ${Media.SM} {
@@ -65,11 +65,8 @@ const WrapperTitle = styled(ContainerFlex)`
 `;
 
 const Title = styled.h2`
-  color: #363636;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.1px;
+  color: ${Color.Dark};
+  ${SUBTITLE_SMALL}
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -86,9 +83,7 @@ const Title = styled.h2`
   }
 
   ${Media.SM} {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+    ${SUBTITLE_SMALL}
     -webkit-line-clamp: 3;
     line-clamp: 3;
   }
@@ -108,11 +103,9 @@ const SubTitle = styled(ContainerFlex)`
 `;
 
 const WrapperText = styled.h3`
+  ${SUBTITLE_SMALL}
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.1px;
-  color: #727272;
+  color: ${Color.GrayType1};
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

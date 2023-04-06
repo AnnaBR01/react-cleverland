@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexBeetween, ContainerFlexColumn } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlexBeetween, ContainerFlexColumn, Media } from '../../ui';
 
 const Wrapper = styled(ContainerFlexColumn)`
   align-self: flex-start;
@@ -27,7 +26,7 @@ const Amount = styled.span<{ $isActive: boolean }>`
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: ${({ $isActive }) => ($isActive ? '#363636' : '#a7a7a7')};
+  color: ${({ $isActive }) => ($isActive ? Color.Dark : Color.GrayType2)};
 `;
 
 const WrapperChevron = styled(ContainerFlexBeetween)`

@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 import {
   Color,
-  ContainerFlex,
   ContainerFlexBeetween,
   ContainerFlexColumnCenter,
   ContainerFlexRowCenter,
-  Media,
+  INFO_LARGE,
+  INFO_SMALL,
 } from '../../ui';
 
 const StyledCalendar = styled(ContainerFlexColumnCenter)`
@@ -52,11 +52,8 @@ const DaysOfTheWeek = styled.div`
 `;
 
 const DayOfTheWeek = styled(ContainerFlexRowCenter)`
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  ${INFO_LARGE}
+  background: ${Color.ButtonHover};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -71,9 +68,7 @@ const Days = styled.div`
 `;
 
 const Day = styled.button<{ $isToday: boolean; $isDayOrder: boolean; $isWeekend: boolean; $isActiveDay: boolean }>`
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
+  ${INFO_SMALL}
   color: ${({ $isToday, $isDayOrder, $isWeekend, $isActiveDay }) =>
     $isToday && !$isDayOrder
       ? 'rgb(248, 54, 0)'
@@ -83,15 +78,11 @@ const Day = styled.button<{ $isToday: boolean; $isDayOrder: boolean; $isWeekend:
       ? Color.Dark
       : Color.GrayType2};
   background: ${({ $isDayOrder, $isWeekend }) =>
-    $isDayOrder
-      ? 'linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%)'
-      : $isWeekend
-      ? Color.NegativeBackground
-      : 'none'};
+    $isDayOrder ? Color.ButtonHover : $isWeekend ? Color.NegativeBackground : 'none'};
   border-radius: 16px;
 
   &:hover {
-    border: ${({ $isActiveDay }) => ($isActiveDay ? '1px solid #BFC4C9' : 'none')};
+    border: ${({ $isActiveDay }) => ($isActiveDay ? `1px solid ${Color.GrayType3}` : 'none')};
   }
 `;
 
@@ -102,10 +93,7 @@ const Mounths = styled.div`
 `;
 
 const Mounth = styled.button`
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
+  ${INFO_LARGE}
   text-transform: capitalize;
   color: ${Color.GrayType2};
 

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 import background from '../../assets/icons/background.svg';
-import { ContainerFlex, ContainerFlexBeetween } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlex, ContainerFlexBeetween, Media } from '../../ui';
 
 const StyledNavigation = styled(ContainerFlexBeetween)`
   margin-bottom: 32px;
@@ -69,7 +68,7 @@ const Text = styled.p`
   line-height: 18px;
   font-weight: 400;
   letter-spacing: 0.1px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
   white-space: nowrap;
 
   ${Media.SM} {
@@ -90,7 +89,7 @@ const SearchInput = styled.input<{ $isSearchOpen: boolean }>`
   caret-color: #f83600;
 
   &::placeholder {
-    color: #a7a7a7;
+    color: ${Color.GrayType2};
   }
 
   ${Media.SM} {

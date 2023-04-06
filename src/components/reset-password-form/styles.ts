@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { BODY_LARGE, Color } from '../../ui';
 
 const StyledResetPasswordForm = styled.form`
   display: flex;
@@ -13,14 +13,8 @@ const InputWrapper = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 16px;
-  line-height: 24px;
-  color: #727272;
-
-  ${Media.SM} {
-    font-size: 15px;
-    line-height: 20px;
-  }
+  color: ${Color.GrayType1};
+  ${BODY_LARGE}
 `;
 
 export { StyledResetPasswordForm, InputWrapper, Text };

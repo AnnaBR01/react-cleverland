@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui';
+import { Color, H3, H4, Media } from '../../ui';
 import { ContainerFlexColumn } from '../../ui/containers';
 
 interface IPropsAuth {
@@ -30,22 +30,12 @@ const StyledAuthLayout = styled(ContainerFlexColumn).attrs<IPropsAuth>((props) =
 `;
 
 const Logo = styled.p`
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.1px;
-  color: #ffffff;
-
-  ${Media.SM} {
-    font-size: 18px;
-    line-height: 28px;
-  }
+  color: ${Color.White};
+  ${H3}
 `;
 
 const Title = styled.h3`
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  ${H4}
 `;
 
 const StyledForm = styled.div.attrs<IPropsForm>((props) => ({
@@ -57,7 +47,7 @@ const StyledForm = styled.div.attrs<IPropsForm>((props) => ({
   padding-top: ${({ paddingTop }) => paddingTop};
   padding-bottom: 48px;
   padding-inline: 56px;
-  background: #ffffff;
+  background: ${Color.White};
   border-radius: 16px;
 
   ${Media.SM} {

@@ -1,16 +1,13 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { Color, INFO_LARGE, Media } from '../../ui';
 
 const StyledMessage = styled.p`
   position: absolute;
   top: 56px;
   left: 12px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.2px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
+  ${INFO_LARGE}
 
   ${Media.SM} {
     margin-bottom: 10px;

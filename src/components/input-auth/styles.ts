@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui';
+import { Color, Media } from '../../ui';
 
 const InputWrapper = styled.div`
   position: relative;
@@ -10,11 +10,12 @@ const StyledInputAuth = styled.input<{ $errorInput: boolean; $renderingOk: boole
   width: 100%;
   padding: 26px 12px 12px;
   margin-bottom: 36px;
-  background: #f9f9fa;
+  background: ${Color.GrayType5};
   border-radius: 4px;
   outline: none;
   border: none;
-  border-bottom: ${({ $errorInput }) => ($errorInput ? '1px solid  #F42C4F' : '1px solid #BFC4C9')};
+  border-bottom: ${({ $errorInput }) =>
+    $errorInput ? `1px solid  ${Color.Negative}` : `1px solid ${Color.GrayType3}`};
 
   ${Media.SM} {
     margin-bottom: 44px;

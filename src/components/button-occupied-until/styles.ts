@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { BUTTON_SMALL, Color, Media } from '../../ui';
 
 interface IProps {
   large: number;
@@ -21,15 +21,12 @@ const StyledButtonOccupiedUntil = styled.button.attrs<IProps>((props) => ({
   width: ${({ large }) => large};
   padding-block: ${({ padding }) => padding};
   padding-inline: 15px;
-  background: #f9f9fa;
-  border: 1px solid #bfc4c9;
+  background: ${Color.GrayType5};
+  border: 1px solid ${Color.GrayType3};
   border-radius: 20px;
-  font-weight: 600;
+  color: ${Color.GrayType2};
+  ${BUTTON_SMALL}
   font-size: ${({ fontSize }) => fontSize};
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #a7a7a7;
 
   ${Media.MD} {
     width: ${({ middle }) => middle};
@@ -37,7 +34,6 @@ const StyledButtonOccupiedUntil = styled.button.attrs<IProps>((props) => ({
 
   ${Media.SM} {
     width: 100%;
-    font-size: 12px;
   }
 `;
 

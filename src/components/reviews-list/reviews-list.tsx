@@ -5,7 +5,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '../../assets';
 import reviewerAvatarIcon from '../../assets/images/reviewer-avatar.png';
 import { useToggle, useWindowSize } from '../../hooks';
 import { getBookDetails, getUserInfo, useAppSelector } from '../../store';
-import { Breakpoint, SmallTitle } from '../../ui';
+import { Breakpoint } from '../../ui';
 import { checkReviewsFromCurrentUser, sortComments } from '../../utils';
 import { Loader, ModalOuter, ModalRateBook, PrimaryButton, Separator, Stars } from '..';
 
@@ -17,6 +17,7 @@ import {
   InfoText,
   Review,
   ReviewsAmount,
+  SmallTitle,
   Text,
   TitleBox,
   Wrapper,

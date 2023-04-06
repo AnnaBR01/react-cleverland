@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Media } from '../../ui/media';
+import { Color, Media } from '../../ui';
 
 const StyledBreadcrumbs = styled.div`
   position: absolute;
@@ -8,7 +8,7 @@ const StyledBreadcrumbs = styled.div`
   left: 0;
   width: 100%;
   padding-block: 23px;
-  background: #f9f9fa;
+  background: ${Color.GrayType5};
 
   ${Media.MD} {
     top: 128px;
@@ -37,7 +37,7 @@ const BreadcrumbsContent = styled.div`
 const Wrapper = styled.div`
   display: flex;
   grid-gap: 11px;
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
 
   ${Media.MD} {
     font-size: 16px;
@@ -53,7 +53,7 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-  color: #a7a7a7;
+  color: ${Color.GrayType2};
 
   ${Media.MD} {
     font-size: 16px;

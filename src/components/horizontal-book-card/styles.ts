@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-import { ContainerFlexBeetween, ContainerFlexColumn, ContainerFlexRowCenter } from '../../ui/containers';
-import { Media } from '../../ui/media';
+import { Color, ContainerFlexBeetween, ContainerFlexColumn, ContainerFlexRowCenter, Media } from '../../ui';
 
 const StyledHorizontalBookCard = styled.div`
   display: flex;
@@ -31,7 +30,7 @@ const Image = styled.img`
   width: 120px;
   height: 170px;
   object-fit: contain;
-  border: 1px solid #a7a7a7;
+  border: 1px solid ${Color.GrayType2};
   border-radius: 3px;
 
   ${Media.MD} {
@@ -48,8 +47,8 @@ const Image = styled.img`
 const NoImage = styled(ContainerFlexRowCenter)`
   width: 120px;
   height: 170px;
-  background: #f9f9fa;
-  border: 1px solid #a7a7a7;
+  background: ${Color.GrayType5};
+  border: 1px solid ${Color.GrayType2};
   border-radius: 3px;
 
   ${Media.MD} {
@@ -74,7 +73,7 @@ const Title = styled.h2`
   font-weight: 700;
   font-size: 22px;
   line-height: 32px;
-  color: #363636;
+  color: ${Color.Dark};
 
   ${Media.MD} {
     font-size: 24px;
@@ -96,7 +95,7 @@ const WrapperText = styled.h3`
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: #727272;
+  color: ${Color.GrayType1};
 
   ${Media.MD} {
     margin-bottom: 16px;
