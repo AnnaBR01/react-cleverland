@@ -18,11 +18,12 @@ const StyledAuthLayout = styled(ContainerFlexColumn).attrs<IPropsAuth>((props) =
 }))<IPropsAuth>`
   height: 100vh;
   align-items: center;
+  justify-content: center;
   grid-gap: ${({ gapLg }) => gapLg};
-  padding-top: 180px;
   background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
 
   ${Media.SM} {
+    justify-content: start;
     grid-gap: ${({ gapSm }) => gapSm};
     padding-top: 16px;
     padding-inline: 16px;

@@ -2,6 +2,7 @@
   "name": "library.cleverland",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://annabr01.github.io/react-cleverland/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -9,7 +10,9 @@
     "eject": "react-scripts eject",
     "cy": "cypress open",
     "e2e": "start-server-and-test start http-get://localhost:3000 cy",
-    "e2e:run": "start-test 3000 'cypress run'"
+    "e2e:run": "start-test 3000 'cypress run'",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -42,6 +45,7 @@
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-unicorn": "^44.0.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "prettier-eslint": "^14.0.2",
