@@ -12,7 +12,7 @@
   </a>
 
   <h3 align="center">Cleverland </h3>
- <p align="center">in progress: account page and animation effects  </p>
+ <div align="center" >in progress: account page and animation effects  </div>
 
   <p align="center">
        <br />
