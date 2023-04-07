@@ -11,7 +11,8 @@
     <img src="http://g.recordit.co/Ccq1GcjLOR.gif" alt="Logo" >
   </a>
 
-  <h3 align="center">Cleverland</h3>
+  <h3 align="center">Cleverland </h3>
+ <p align="center">in progress: account page and animation effects  </p>
 
   <p align="center">
        <br />
