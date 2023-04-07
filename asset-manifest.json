@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-cleverland/static/css/main.b0067b7f.css",
-    "main.js": "/react-cleverland/static/js/main.d9838c1e.js",
+    "main.js": "/react-cleverland/static/js/main.3932f4ad.js",
     "static/media/name-logo.svg": "/react-cleverland/static/media/name-logo.e0c9af4517b7471a6baf01e12e49f7f2.svg",
     "static/media/instagram-icon.svg": "/react-cleverland/static/media/instagram-icon.0a9a2758cdfb4651c3afa669141a7eab.svg",
     "static/media/square-icon.svg": "/react-cleverland/static/media/square-icon.a40b9bf4bb209b95ee7debeb8568abe3.svg",
@@ -38,10 +38,10 @@
     "static/media/ok-password-icon.svg": "/react-cleverland/static/media/ok-password-icon.f8ad084261815f5a72395119b8099c37.svg",
     "static/media/date-picker-icon.svg": "/react-cleverland/static/media/date-picker-icon.ff1fbb418a503b25ce55f5b5452187c6.svg",
     "main.b0067b7f.css.map": "/react-cleverland/static/css/main.b0067b7f.css.map",
-    "main.d9838c1e.js.map": "/react-cleverland/static/js/main.d9838c1e.js.map"
+    "main.3932f4ad.js.map": "/react-cleverland/static/js/main.3932f4ad.js.map"
   },
   "entrypoints": [
     "static/css/main.b0067b7f.css",
-    "static/js/main.d9838c1e.js"
+    "static/js/main.3932f4ad.js"
   ]
 }
