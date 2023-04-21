@@ -13,8 +13,8 @@ const StyledAuthLayout = styled(ContainerFlexColumn).attrs<IProps>((props) => ({
 }))<IProps>`
   height: 100vh;
   align-items: center;
+  justify-content: center;
   grid-gap: ${({ gapLg }) => gapLg};
-  padding-top: 180px;
   background: ${Color.ButtonHover};
 
   ${Media.SM} {
